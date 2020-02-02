@@ -95,13 +95,14 @@ li a:hover::after{
   position: absolute;
   border-radius: 3px;
   width: 100%;
-  height: 1080px;
+  height: 780px;
+  opacity: .4;
   background: rgb(41, 41, 41);
-  z-index: 1000000000000000000;
+  z-index: 10;
 }
 .robot{
     font-size: 120%;
-    margin-left: 45%;
+    margin-left: 47%;
     position: absolute;
     font-family: 'Raleway', sans-serif;
     background-color: transparent;
