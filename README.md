@@ -1,6 +1,6 @@
 # Aero Manassas (FBLA 2020)
 
-One Paragraph of project description goes here
+This is the source code for our FBLA project, and we kindly request that this will not be stolen for future FBLA projects.
 
 ## Authors
 
