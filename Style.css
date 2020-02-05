@@ -1,8 +1,21 @@
+:root{
+  --RamHei: 100px;
+  --Genius:.9;
+  --WhitetoBlue: white;
+  --Js: 0;
+  --JustBluetoWhite: rgb(121,168,192);
+
+}
 *{
     margin: 0px;
     padding: 0px;
     background-color: white;
 
+}
+a{
+  text-decoration: none;
+  color: white;
+  background-color: transparent;
 }
 .meat img{
     position: absolute;
@@ -35,10 +48,10 @@ li a {
     float: right;
     color: rgb(41, 41, 41);
     text-align: center;
-    width: 9.2%;
+    width: 8%;
     text-align: center;
     position: relative;
-    transition: font-size 175ms ease-in-out, color 225ms ease-in-out;
+    transition: font-size 300ms ease-out, color 225ms ease-out;
 
 }
 .rocket{
@@ -57,18 +70,18 @@ ul{
 
 li a:hover{
     color: rgb(121, 168, 192);
-    font-size: 13.5px;
+    font-size: 14px;
 }
 li a::after{
     content: "";
     position: absolute;
     left: calc(15% + 2px);
-    width: 65%;
+    width: 67%;
     top: 52px;
     height: .8px;
     background: rgb(41, 41, 41);
     transform: scaleX(0);
-    transition: transform 200ms ease-in-out, background 150ms ease-in-out;
+    transition: transform 300ms ease-out, background 150ms ease-in-out;
 }
 li a:hover::after{
     transform: scaleX(1);
@@ -88,7 +101,7 @@ li a:hover::after{
     overflow: hidden;
     position: fixed;
     top: 0;
-
+    height: 800px;
 
 }
 .OhMyGodda{
@@ -96,7 +109,7 @@ li a:hover::after{
   border-radius: 3px;
   width: 100%;
   height: 890px;
-  opacity: .5;
+  opacity: .3;
   background: rgb(41, 41, 41);
   z-index: 10;
 }
@@ -141,82 +154,55 @@ li a:hover::after{
     font-variant: small-caps;
     letter-spacing: .2em;
 }
+
 .FirstPlaceWork{
+  all: none;
   position: absolute;
   height: 40px;
   width: 260px;
   border-radius: 80px;
-  background: rgb(121, 168, 192);
+  background: var(--JustBluetoWhite);
   top: 535px;
   margin-left: calc(52% - 135px);
   z-index: 30;
-
+  transform: scaleX(var(--Genius)) scaleY(var(--Genius));
+  transition: transform 300ms ease-out, background 100ms ease-out;
 }
 
 .CodingIsEasy{
   position: absolute;
   font-size: 110%;
+  transform: scaleX(var(--Genius)) scaleY(var(--Genius));
 
-  color: white;
-  top: 541px;
+  color: var(--WhitetoBlue);
+  top: 543px;
   margin-left: calc(52% - 70px);
   z-index: 40;
   background-color: transparent;
   font-family: 'Poppins', sans-serif;
   font-weight: 400;
   letter-spacing: .3em;
+  transition: transform 500ms ease-out, color 100ms ease-out;
 }
+
 .Harmon{
   position: absolute;
-  height: 300px;
+  height: 250px;
   width: 100%;
-  color: white;
-  top: 800px;
-  z-index: 100;
+  top: 700px;
+  background: white;
+  z-index: 34;
 }
-/*Sauce {
-    position: absolute;
-    width: 15px;
-    top: 220px;
-    margin-left: 65%;
-    z-index: 55;
-    background: transparent;
-    transition: width 180ms ease-in-out, margin-left 180ms ease-in-out;
+.Sauce{
+  position: absolute;
+  top: 170px;
+  width: 15px;
+  left: calc(100% - 130px);
+  z-index: 45;
+  background: transparent;
+  transition: transform 200ms ease-out;
 }
+
 .Sauce:hover{
-        width: 18px;
+        transform: scaleX(1.1) scaleY(1.1);
 }
-.Pencil{
-    position: absolute;
-    border-radius: 3px;
-    width: 400px;
-    height: 180px;
-    opacity: .6;
-    margin-left: 64.5%;
-    background: rgb(41, 41, 41);
-    z-index: 49;
-    top: 210px;
-
-
-}
-*/
-/*ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    font-family: 'Raleway', sans-serif;
-    text-align: right;
-    justify-content: right;
-  }
-nav{
-    justify-content: space-around;
-    width: 100%;
-}
-li a {
-    display: block;
-    background-color: red;
-    padding: 8px 16px;
-    text-decoration: none;
-    color: rgb(41, 41, 41);
-}
-*/
