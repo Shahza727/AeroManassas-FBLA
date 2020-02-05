@@ -12,7 +12,7 @@
     float: left;
     transition: opacity 300ms ease-in-out;
     opacity: 100;
-    z-index: 100;
+    z-index: 1000;
 }
 .meat img:hover{
     opacity: .6;
@@ -22,7 +22,7 @@ nav{
     overflow: HIDDEN;
     width: 100%;
     position: fixed;
-    z-index: 50;
+    z-index: 500;
 
 }
 li a {
@@ -62,9 +62,10 @@ li a:hover{
 li a::after{
     content: "";
     position: absolute;
-    left: 15%;
+    left: calc(15% + 2px);
     width: 65%;
-    height: 1px;
+    top: 52px;
+    height: .8px;
     background: rgb(41, 41, 41);
     transform: scaleX(0);
     transition: transform 200ms ease-in-out, background 150ms ease-in-out;
@@ -85,7 +86,7 @@ li a:hover::after{
     width: 100%;
     z-index: 1;
     overflow: hidden;
-    position: absolute;
+    position: fixed;
     top: 0;
 
 
@@ -94,34 +95,34 @@ li a:hover::after{
   position: absolute;
   border-radius: 3px;
   width: 100%;
-  height: 990px;
+  height: 890px;
   opacity: .5;
   background: rgb(41, 41, 41);
   z-index: 10;
 }
 .robot{
     font-size: 120%;
-    margin-left: calc(50% - 45px);
+    margin-left: calc(52% - 49px);
     position: absolute;
     font-family: 'Raleway', sans-serif;
     background-color: transparent;
     font-weight: 500;
     color:white;
     z-index: 50;
-    top: 380px;
+    top: 300px;
     letter-spacing: 1.3em;
     text-shadow:  #000000;
 }
 .Shock h2{
     font-size: 220%;
-    margin-left: calc(50% - 380px);
+    margin-left: calc(52% - 380px);
     position: absolute;
     font-family: 'Poppins', sans-serif;
     background-color: transparent;
     color:white;
     font-weight: 900;
     z-index: 50;
-    top: 415px;
+    top: 335px;
     letter-spacing: .3em;
     font-variant: small-caps;
     text-shadow:  #000000;
@@ -129,41 +130,49 @@ li a:hover::after{
 .winkwink{
     font-size: 100%;
     text-align: center;
-    left: calc(50% - 320px);
+    left: calc(52% - 320px);
     position: absolute;
     font-family: 'Raleway', sans-serif;
     background-color: transparent;
     font-weight: 500;
     color:white;
     z-index: 59;
-    top: 475px;
+    top: 395px;
     font-variant: small-caps;
     letter-spacing: .2em;
 }
 .FirstPlaceWork{
   position: absolute;
-  height: 55px;
+  height: 40px;
   width: 260px;
   border-radius: 80px;
   background: rgb(121, 168, 192);
-  top: 600px;
-  margin-left: calc(50% - 135px);
-  z-index: 100;
+  top: 535px;
+  margin-left: calc(52% - 135px);
+  z-index: 30;
 
 }
 
 .CodingIsEasy{
   position: absolute;
-  font-size: 150%;
-  font-variant: small-caps;
+  font-size: 110%;
+
   color: white;
-  top: 608px;
-  margin-left: calc(50% - 100px);
-  z-index: 1000;
+  top: 541px;
+  margin-left: calc(52% - 70px);
+  z-index: 40;
   background-color: transparent;
   font-family: 'Poppins', sans-serif;
-  font-weight: bolder;
-  letter-spacing: .4em;
+  font-weight: 400;
+  letter-spacing: .3em;
+}
+.Harmon{
+  position: absolute;
+  height: 300px;
+  width: 100%;
+  color: white;
+  top: 800px;
+  z-index: 100;
 }
 /*Sauce {
     position: absolute;
