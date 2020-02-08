@@ -187,9 +187,9 @@ li a:hover::after{
 
 .Harmon{
   position: absolute;
-  height: 250px;
+  height: 300px;
   width: 100%;
-  top: 700px;
+  top: calc(800px);
   background: white;
   z-index: 34;
 }
@@ -205,4 +205,14 @@ li a:hover::after{
 
 .Sauce:hover{
         transform: scaleX(1.1) scaleY(1.1);
+}
+.LoyaltyP1{
+  font-family: 'Playfair Display', sans-serif;
+  font-weight: 600;
+  font-size: 2.5rem;
+  top: 840px;
+  text-align: center;
+  left: 150px;
+  z-index: 43;
+  color: #3c515e;
 }
