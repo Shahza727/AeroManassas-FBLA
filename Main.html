@@ -10,12 +10,32 @@
 <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
 <link crossorigin="anonymous" rel="stylesheet" id="neve-google-font-playfair-display-css" href="//fonts.googleapis.com/css?family=Playfair+Display%3A400&amp;ver=5.3.2" type="text/css" media="all">
 <link crossorigin="anonymous" rel="stylesheet" id="google-fonts-1-css" href="https://fonts.googleapis.com/css?family=Poppins%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CPlayfair+Display%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic&amp;ver=5.3.2" type="text/css" media="all">
+<script src="lib/stats.js"></script>
+<script>
+  var count_particles, stats, update;
+  stats = new Stats;
+  stats.setMode(0);
+  stats.domElement.style.position = 'absolute';
+  stats.domElement.style.left = '0px';
+  stats.domElement.style.top = '0px';
+  document.body.appendChild(stats.domElement);
+  count_particles = document.querySelector('.js-count-particles');
+  update = function() {
+    stats.begin();
+    stats.end();
+    if (window.pJSDom[0].pJS.particles && window.pJSDom[0].pJS.particles.array) {
+      count_particles.innerText = window.pJSDom[0].pJS.particles.array.length;
+    }
+    requestAnimationFrame(update);
+  };
+  requestAnimationFrame(update);
+</script>
  </head>
  <body>
    <div class="Shark">
    <nav>
       <div class ="meat">
-         <a href="Main.html"><img src="Logo.png" alt="AeroManassas"></a>
+         <a href="Main.html"><img src="Assets/Logo.png" alt="AeroManassas"></a>
       </div>
       <ul>
          <div class="rocket"><li><a href="Login.html">Login</a></li></div>
@@ -30,16 +50,19 @@
    </div>
 
     <div class ="Shock">
-         <img class="RamRider" src="Yush.jpg" alt="">
+         <img class="RamRider" src="Assets/Yush.jpg" alt="">
          <div class="OhMyGodda"></div>
          <p class="robot">FLY</p>
          <div class="Pencil" ></div>
          <h2>Fast, Affordable and Reliable</h2>
-         <img class="Sauce" src="Location Icon.png" alt="" onmouseover="JS()" onmouseout="BJS()"></img>
-         <p class="winkwink">   -An Awe-inspiring Experience Awaits Only a Few Clicks Away. <br> Have a phenomenal time with Family and Friends in Our world<br> Renowned Travel Locations.</p>
+         <img class="Sauce" src="Assets/Location Icon.png" alt="" onmouseover="JS()" onmouseout="BJS()"></img>
+         <p class="winkwink">   -  An Awe-inspiring Experience Awaits Only a Few Clicks Away. <br> Have a phenomenal time with Family and Friends in Our world<br> Renowned Travel Locations.</p>
          <a href="#"><div class="Ham" onmouseover="mouseOver()"  onmouseout="mouseOut()"><p class="CodingIsEasy">BOOK NOW</p><div class="FirstPlaceWork"></div></div></a>
     </div>
 
-    <div class="Harmon"><p class="LoyaltyP1">We Pay Back Your Loyalty in Full</p></div>
+    <div class="Harmon">
+      <p class="LoyaltyP1">We Pay Your Loyalty in Full</p>
+      <p class="LoyaltyP2">Meet your needs and beyond. With our brand new, industry innovative, Free Flyer Program<br> that prioritizes you on our illustrious waiting list along with other notable perks.</p>
+    </div>
  </body>
  </html>

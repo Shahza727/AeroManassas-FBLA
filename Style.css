@@ -48,14 +48,14 @@ li a {
     float: right;
     color: rgb(41, 41, 41);
     text-align: center;
-    width: 8%;
+    width: 7%;
     text-align: center;
     position: relative;
     transition: font-size 300ms ease-out, color 225ms ease-out;
 
 }
 .rocket{
-    margin-right: 40px;
+    margin-right: 60px;
 }
 ul{
     font-size: 12.5px;
@@ -75,8 +75,8 @@ li a:hover{
 li a::after{
     content: "";
     position: absolute;
-    left: calc(15% + 2px);
-    width: 67%;
+    left: calc(15% - 6px);
+    width: 80%;
     top: 52px;
     height: .8px;
     background: rgb(41, 41, 41);
@@ -153,6 +153,7 @@ li a:hover::after{
     top: 395px;
     font-variant: small-caps;
     letter-spacing: .2em;
+
 }
 
 .FirstPlaceWork{
@@ -187,7 +188,7 @@ li a:hover::after{
 
 .Harmon{
   position: absolute;
-  height: 300px;
+  height: 250px;
   width: 100%;
   top: calc(800px);
   background: white;
@@ -208,11 +209,36 @@ li a:hover::after{
 }
 .LoyaltyP1{
   font-family: 'Playfair Display', sans-serif;
-  font-weight: 600;
+  font-weight: 800;
   font-size: 2.5rem;
-  top: 840px;
-  text-align: center;
-  left: 150px;
+  margin-top: 80px;
+  margin-left: calc(52% - 230px);
   z-index: 43;
-  color: #3c515e;
+  color: #0c222b;
+  opacity: .95;
+  font-variant: small-caps;
+}
+.LoyaltyP2{
+  font-size: 100%;
+  text-align: center;
+  left: calc(52% - 420px);
+  position: absolute;
+  font-family: 'Raleway', sans-serif;
+  background-color: transparent;
+  font-weight: 500;
+  color: #757575;
+  z-index: 59;
+  margin-top: 10px;
+  font-variant: small-caps;
+  letter-spacing: .2em;
+}
+#particles-js{
+  width: 100%;
+  height: 100%;
+  background-color: #b61924;
+  background-image: url('');
+  background-size: cover;
+  background-position: 50%, 50%;
+  background-repeat: no-repeat;
+
 }
