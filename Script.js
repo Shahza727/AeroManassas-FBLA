@@ -17,3 +17,7 @@ function JS(){
 function BJS(){
   root.style.setProperty('--JS', 0);
 }
+window.addEventListener("load", function () {
+    const loader = document.querySelector(".PreLoader");
+    loader.className += " hidden"; // class "loader hidden"
+});

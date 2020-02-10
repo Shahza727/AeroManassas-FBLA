@@ -12,6 +12,27 @@
     background-color: white;
 
 }
+.PreLoader{
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  background: white;
+  z-index: 1000;
+}
+.PreLoader.hidden{
+  animation-name: fadeOut;
+  animation-duration: 1.3s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fadeOut {
+
+    100% {
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+
 a{
   text-decoration: none;
   color: white;
@@ -66,6 +87,7 @@ ul{
     margin-left: 25px;
     font-weight: 500;
     background: .8;
+
 }
 
 li a:hover{
@@ -88,19 +110,13 @@ li a:hover::after{
     background: rgb(121, 168, 192);
 }
 
-/*.parallax {
-
-    background-image: url('Logo4.png');
-    height: 500px;
-    width: 100%;
-  }*/
 
   .RamRider{
     width: 100%;
     z-index: 1;
     overflow: hidden;
     position: fixed;
-    top: 0;
+    top: 0px;
     height: 800px;
 
 }
@@ -115,20 +131,31 @@ li a:hover::after{
 }
 .robot{
     font-size: 120%;
-    margin-left: calc(52% - 49px);
     position: absolute;
     font-family: 'Raleway', sans-serif;
     background-color: transparent;
     font-weight: 500;
     color:white;
     z-index: 50;
-    top: 300px;
+    top:300px;
+    margin-left: calc(52% - 45px);
     letter-spacing: 1.3em;
-    text-shadow:  #000000;
+    animation-name: texta;
+    animation-duration: 1.1s;
+
+    animation-timing-function: ease-in-out;
+
+}
+@keyframes texta{
+  from{
+    top: 190px; margin-left: calc(52% - 45px);
+  }
+  to{
+    top: 300px; margin-left: calc(52% - 45px);
+  }
 }
 .Shock h2{
     font-size: 220%;
-    margin-left: calc(52% - 380px);
     position: absolute;
     font-family: 'Poppins', sans-serif;
     background-color: transparent;
@@ -137,13 +164,26 @@ li a:hover::after{
     z-index: 50;
     top: 335px;
     letter-spacing: .3em;
+    margin-left: calc(52% - 380px);
     font-variant: small-caps;
     text-shadow:  #000000;
+    animation-name: textb;
+    animation-duration: 1.3s;
+
+    animation-timing-function: ease-out;
+}
+@keyframes textb{
+  from{
+    top:255px;margin-left: calc(52% - 380px);
+  }
+  to{
+    top: 335px;margin-left: calc(52% - 380px);
+  }
 }
 .winkwink{
     font-size: 100%;
     text-align: center;
-    left: calc(52% - 320px);
+    margin-left: calc(52% - 320px);
     position: absolute;
     font-family: 'Raleway', sans-serif;
     background-color: transparent;
@@ -153,9 +193,19 @@ li a:hover::after{
     top: 395px;
     font-variant: small-caps;
     letter-spacing: .2em;
+    animation-name: textc;
 
+    animation-duration: 1.3s;
+    animation-timing-function: ease-out;
 }
-
+@keyframes textc{
+  from{
+    top:315px; margin-left: calc(52% - 320px);
+  }
+  to{
+    top: 395px; margin-left: calc(52% - 320px);
+  }
+}
 .FirstPlaceWork{
   all: none;
   position: absolute;
@@ -168,6 +218,17 @@ li a:hover::after{
   z-index: 30;
   transform: scaleX(var(--Genius)) scaleY(var(--Genius));
   transition: transform 300ms ease-out, background 100ms ease-out;
+  animation-name: ButtonB;
+  animation-duration: 1s;
+  animation-timing-function: ease-out;
+}
+@keyframes ButtonB{
+  from{
+    top: 475px;
+  }
+  to{
+    top: 535px;
+  }
 }
 
 .CodingIsEasy{
@@ -183,9 +244,20 @@ li a:hover::after{
   font-family: 'Poppins', sans-serif;
   font-weight: 400;
   letter-spacing: .3em;
-  transition: transform 500ms ease-out, color 100ms ease-out;
-}
 
+  transition: transform 500ms ease-out, color 100ms ease-out;
+  animation-name: ButtonA;
+  animation-duration: 1s;
+  animation-timing-function: ease-out;
+}
+@keyframes ButtonA{
+  from{
+    top: 483px;
+  }
+  to{
+    top: 543px;
+  }
+}
 .Harmon{
   position: absolute;
   height: 250px;
