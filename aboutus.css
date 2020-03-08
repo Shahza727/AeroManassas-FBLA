@@ -1,0 +1,114 @@
+  :root{
+    --RamHei: 100px;
+    --Genius:.9;
+    --WhitetoBlue: white;
+    --Js: 0;
+    --JustBluetoWhite: rgb(121,168,192);
+    --Shambles: .7;
+    --WhitetoBlue2: white;
+    --JustBluetoWhite2: rgb(121,168,192);
+    --solidtodashed: solid;
+  }
+  *{
+      margin: 0px;
+      padding: 0px;
+      background-color: white;
+
+  }
+  .PreLoader{
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    background: white;
+    z-index: 1000;
+  }
+  .PreLoader.hidden{
+    animation-name: fadeOut;
+    animation-duration: 1.3s;
+    animation-fill-mode: forwards;
+  }
+
+  @keyframes fadeOut {
+
+      100% {
+          opacity: 0;
+          visibility: hidden;
+      }
+  }
+
+  a{
+    text-decoration: none;
+    color: white;
+    background-color: transparent;
+  }
+  .meat img{
+      position: absolute;
+      margin-left: 8%;
+      width: 175px;
+      margin-top: 8px;
+      float: left;
+      transition: opacity 300ms ease-in-out;
+      opacity: 100;
+      z-index: 1000;
+  }
+  .meat img:hover{
+      opacity: .6;
+  }
+  nav{
+      justify-content: right;
+      overflow: HIDDEN;
+      width: 100%;
+      position: fixed;
+      z-index: 500;
+      height: 75px;
+  }
+  li a {
+
+      display: block;
+      height: 4px;
+      top: 7px;
+      padding: 35px 5px;
+      text-decoration: none;
+      float: right;
+      color: rgb(41, 41, 41);
+      text-align: center;
+      width: 10%;
+      text-align: center;
+      position: relative;
+      transition: font-size 300ms ease-out, color 225ms ease-out;
+
+  }
+  .rocket{
+      margin-right: 60px;
+  }
+  ul{
+      font-size: 12.5px;
+      list-style: none;
+      padding: 0;
+      font-family: 'Raleway', sans-serif;
+      padding-left: 15px;
+      margin-left: 25px;
+      font-weight: 500;
+      background: .8;
+
+  }
+
+  li a:hover{
+      color: rgb(121, 168, 192);
+      font-size: 14px;
+  }
+  li a::after{
+      content: "";
+      position: absolute;
+      left: calc(15% - 6px);
+      width: 80%;
+      top: 52px;
+      height: .8px;
+      background: rgb(41, 41, 41);
+      transform: scaleX(0);
+      transition: transform 300ms ease-out, background 150ms ease-in-out;
+  }
+  li a:hover::after{
+      transform: scaleX(1);
+      background: rgb(121, 168, 192);
+  }
