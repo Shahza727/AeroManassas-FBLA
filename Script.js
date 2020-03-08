@@ -21,3 +21,15 @@ window.addEventListener("load", function () {
     const loader = document.querySelector(".PreLoader");
     loader.className += " hidden"; // class "loader hidden"
 });
+function mouseOver2(){
+   root.style.setProperty('--Shambles', .8);
+   root.style.setProperty('--WhitetoBlue2', "#79a8c0");
+   root.style.setProperty('--JustBluetoWhite2', "white");
+   root.style.setProperty('--solidtodashed', 'dotted')
+}
+function mouseOut2(){
+   root.style.setProperty('--Shambles', .7);
+   root.style.setProperty('--WhitetoBlue2', "white");
+   root.style.setProperty('--JustBluetoWhite2', "#79a8c0");
+   root.style.setProperty('--solidtodashed', 'solid')
+}
