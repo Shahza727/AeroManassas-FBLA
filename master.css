@@ -1,0 +1,23 @@
+body{
+  padding: none;
+  background-size: cover;
+  background-image: url(Assets/BGLN.jpg);
+  background-repeat: no-repeat;
+}
+.a {
+  position: absolute;
+  color: white;
+  font-family: 'Playfair Display', sans-serif;
+  padding: 3px;
+  background: transparent;
+  font-variant: small-caps;
+}
+.left {
+  position:absolute;
+  width: 50px;
+  height: 50px;
+  border-top: 10px solid white;
+  border-bottom: 10px solid white;
+
+  border-right:10px solid white;
+}
